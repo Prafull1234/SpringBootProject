@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Telisko Web Application</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- <link rel="stylesheet" href="w3.css"> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+</style>
+<script>
+  // Script to open and close left sidebar
+  function w3_open1() {
+        document.getElementById("mySidebar1").style.display = "block";
+        document.getElementById("myOverlay1").style.display = "block";
+  }
+  function w3_close1() {
+        document.getElementById("mySidebar1").style.display = "none";
+        document.getElementById("myOverlay1").style.display = "none";
+  }
+  // Script to open and close right sidebar
+  function w3_open2() {
+        document.getElementById("mySidebar2").style.display = "block";
+        document.getElementById("myOverlay2").style.display = "block";
+  }
+  function w3_close2() {
+        document.getElementById("mySidebar2").style.display = "none";
+        document.getElementById("myOverlay2").style.display = "none";
+  }
+</script>
+<body class="w3-light-grey">
+
+<!-- Left/Sidebar/menu on small/medium screen -->
+<nav class="w3-sidebar w3-bar-block w3-grayscale-min w3-green w3-animate-left w3-hide-large w3-text-light-grey" style="z-index:3;width:250px;font-weight:bold;display:none;left:0;top:68px;" id="mySidebar1"><br>
+  <h3 class="w3-center w3-padding-16"><b>www.sample.in</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close1()" class="w3-button w3-grayscale-min w3-green w3-large w3-display-topright">
+      <i class="fa fa-remove"></i>
+  </a>
+  <a href="WebApplication.html" onclick="w3_close1()" class="w3-bar-item w3-button w3-center w3-padding-16">Home</a> 
+</nav>
+
+<!-- Left/Sidebar/menu on large screen -->
+<nav class="w3-sidebar w3-bar-block w3-grayscale-min w3-green w3-hide-small w3-hide-medium w3-text-light-grey" style="z-index:3;width:25%;font-weight:bold;left:0%;top:68px">
+    <h3 class="w3-center w3-padding-16"><b>www.sample.in</b></h3>
+    <a href="WebApplication.html" class="w3-bar-item w3-button w3-center w3-padding-16">Home</a> 
+</nav>
+
+<!-- Right/Sidebar/menu on small/medium screen -->
+<nav class="w3-sidebar w3-bar-block w3-grayscale-min w3-green w3-animate-right w3-hide-large w3-text-light-grey" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;top:68px;" id="mySidebar2"><br>
+    <h3 class="w3-center w3-padding-16"><b>www.sample.in</b></h3>
+    <a href="javascript:void(0)" onclick="w3_close2()" class="w3-button w3-grayscale-min w3-green w3-large w3-display-topright">
+      <i class="fa fa-remove"></i>
+    </a>
+  <a href="#login" class="w3-bar-item w3-button w3-center w3-padding-16">LOGIN</a> 
+  <a href="#contact" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT US</a>
+  <a href="#about" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
+</nav>
+
+<!-- Top menu on small/medium screens -->
+<header class="w3-container w3-top w3-dark-grey w3-xlarge w3-hide-large w3-text-light-grey">
+  <a href="javascript:void(0)" class="w3-left w3-button w3-padding-16 w3-white" onclick="w3_open1()">☰</a>
+  <span class="w3-left w3-padding-16">TELUSKO</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-padding-16 w3-white" onclick="w3_open2()">☰</a>
+</header>
+
+<!-- Top menu on large screens -->
+<header class="w3-top w3-dark-grey w3-hide-small w3-hide-medium w3-xlarge w3-text-light-grey">
+    <div class="w3-row">
+        <div class="w3-quarter">
+            <span class="w3-left w3-padding-16" style="margin-left:35%"><b>...LOGO...</b></span>
+        </div> 
+        <div class="w3-quarter">
+            <span class="w3-left w3-padding-16">TELISKO</span> 
+        </div> 
+        <div class="w3-half">
+            <a href="#login" class="w3-right w3-button w3-center w3-padding-16">LOGIN</a> 
+            <a href="#contact" class="w3-right w3-button w3-center w3-padding-16">CONTACT US</a>
+            <a href="#about" class="w3-right w3-button w3-center w3-padding-16">ABOUT ME</a> 
+        </div> 
+    </div> 
+</header>
+
+<!-- footer on large screen -->
+<footer class="w3-hide-small w3-hide-medium w3-padding-16 w3-dark-grey" style="bottom:0;position:fixed;margin-left:25%;width:75%">  
+    <div class="w3-center">All right reserved ! <a href="" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
+</footer>
+
+<!-- footer on small/medium screen -->
+<footer class="w3-hide-large w3-padding-16 w3-dark-grey" style="bottom:0;position:fixed;width:100%;">  
+    <div class="w3-center">All right reserved !  <a href="" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
+</footer>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close1()" style="cursor:pointer" title="close left side menu" id="myOverlay1"></div>
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close2()" style="cursor:pointer" title="close right side menu" id="myOverlay2"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:25%;margin-top:68px;">
+  <!-- Body -->
+  <div class="w3-container w3-row w3-gray">
+      <div class="w3-half"><p>Student Details</p></div>     
+  </div>
+ Enter the Student Age Range:
+  <form action="/getStuden">
+	
+ Select LAge:
+  <input type="number" name="lage" min="10" max="20"><br>
+  
+  Select HAge:
+  <input type="number" name="hage" min="10" max="20"><br>
+  
+  <input type="submit">
+</form>
+  
+  
+<!-- End page content -->
+</div>
+
+</body>
+</html>
